@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color: black;
+    display: flex;
+}
+
+.navbar-logo{
+    height: 60px;
+    width: 120px;
+}
+
+.logo{
+    background-image: url("ChatGPT\ Image\ May\ 7\,\ 2026\,\ 06_51_50\ PM.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 120px;
+    align-items: center;
+}
+
+.navbar-search{
+    width: 650px;
+    height: 40px;
+    background-color: white;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.navbar-search:hover{
+    border: 2px solid rgb(219, 98, 98);
+}
+
+.search-input{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-logo{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.cities{
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: black;
+    margin-left: 200px;
+}
+
+.cities:hover{
+    border: 2px solid rgb(219, 98, 98);
+}
+
+.sign-in{
+    width: 70px;
+    height: 40px;
+    background-color: rgb(133, 19, 19);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.sign-in:hover{
+    border: 2px solid rgb(219, 98, 98);
+}
+
+.bars{
+    width: 59px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.sec-navbar{
+    height: 40px;
+    background-color: rgb(51, 50, 48);
+}
+
+.content{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 750px;
+   
+}
+.one-content{
+    color: white;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.one-content:hover{
+     border: 2px solid grey;
+}
+
+.sec-content{
+    color: white;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.sec-content:hover{
+     border: 2px solid grey;
+}
+
+.thr-content{
+    color: white;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.thr-content:hover{
+     border: 2px solid grey;
+}
+
+.fou-content{
+    color: white;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+.fou-content:hover{
+     border: 2px solid grey;
+}
+
+.sliders{
+    height: 1200px;
+    width: 1200px;
+    background-color: rgb(233, 219, 219);
+    margin-top: 50px;
+    margin-left: 35px;
+
+}
+
+.slides{
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.slides:hover{
+    transform: scale(1.05);
+}
+h2{
+    font-weight: 700px;
+}
+
+.box{
+    height: 430px;
+    width: 23%;
+    background-color: rgb(245, 239, 239);
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+.mov-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    color: grey;
+    margin-top: 15px;
+}
+
+.box1-image{
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+.box1-image:hover{
+    transform: scale(1.03);
+}
+
+.movie-page{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+}
+
+.movie-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px;
+    color: white;
+}
+
+.poster-side img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.details-side h1{
+    font-size: 60px;
+}
+
+.details-side p{
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.details-side button{
+    margin-top: 25px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #f84464;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#trailer-box{
+    margin-top: 30px;
+}
+
+/* BOOK BUTTON */
+
+.book-btn{
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #00b894;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* SEAT PAGE */
+
+.seat-page{
+    display: none;
+    background: #111;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.screen{
+    width: 60%;
+    margin: auto;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.seats-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.seat{
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.available{
+    background: #2ecc71;
+}
+
+.booked{
+    background: red;
+    cursor: not-allowed;
+}
+
+.selected{
+    background: yellow;
+}
+
+.confirm-btn{
+    margin-top: 40px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 8px;
+    background: #f84464;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.booking-details{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:20px;
+margin-bottom:25px;
+}
+
+.detail-box{
+display:flex;
+flex-direction:column;
+}
+
+.detail-box label{
+color:white;
+margin-bottom:5px;
+font-weight:bold;
+}
+
+.detail-box input,
+.detail-box select{
+padding:8px;
+border-radius:8px;
+border:none;
+width:120px;
+}
+
+.login-popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+z-index:999;
+}
+
+.login-content{
+width:350px;
+background:white;
+padding:30px;
+border-radius:20px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+}
+
+.login-content h2{
+margin-bottom:10px;
+}
+
+.login-content input{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:10px;
+border:1px solid lightgray;
+}
+
+.google-btn,
+.mobile-btn,
+.login-btn{
+
+width:100%;
+padding:12px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.google-btn{
+background:#ffffff;
+border:1px solid lightgray;
+}
+
+.mobile-btn{
+background:#f5f5f5;
+}
+
+.login-btn{
+background:#f84464;
+color:white;
+}
+
+.close-btn{
+float:right;
+font-size:25px;
+cursor:pointer;
+}
+
+.terms{
+font-size:12px;
+color:gray;
+margin-top:15px;
+}
+
+.payment-box{
+    margin-top:20px;
+    text-align:center;
+}
+
+.payment-box select{
+    padding:10px;
+    width:220px;
+    border-radius:8px;
+    font-size:16px;
+}
+.selected{
+background:yellow;
+}
+
+.booked{
+background:red;
+cursor:not-allowed;
+}
