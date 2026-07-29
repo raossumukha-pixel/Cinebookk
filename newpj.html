@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineBook</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="mynwpj.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="navbar-search">
+                 <input placeholder="Search for Movies" class="search-input">
+                <div class="search-logo">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="location">
+                <select class="cities">
+                    <option value="Cities">Cities</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                </select>
+            </div>
+
+            <div class="sign-in">
+                <button class="signin-btn" onclick="openLogin()">
+Sign In
+</button>
+
+            </div>
+
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="sec-navbar">
+            <div class="content">
+               <div class="one-content">
+                <p>Book your Show</p>
+               </div>
+               <div class="sec-content">
+                <p>Corporates</p>
+               </div>
+               <div class="thr-content">
+                <p>Offers</p>
+               </div>
+               <div class="fou-content">
+                <p>Gift Cards</p>
+               </div>
+            </div>
+        </div>
+        <div id="loginBox" class="login-popup">
+
+<div class="login-content">
+
+<span class="close-btn" onclick="closeLogin()">&times;</span>
+
+<h2>Get Started</h2>
+
+<p>Unlock personalized movie experience</p>
+
+<button class="google-btn">
+Continue with Google
+</button>
+
+<button class="mobile-btn">
+Continue with Mobile Number
+</button>
+
+<input type="email"
+id="email"
+placeholder="Enter Email">
+
+<input type="password"
+id="password"
+placeholder="Password">
+
+<button class="login-btn"
+onclick="loginUser()">
+Continue
+</button>
+
+<p class="terms">
+I agree to the Terms & Conditions
+</p>
+
+</div>
+
+</div>
+    </header>
+
+    <contents>
+        <div class="sliders">
+            <a href="https://www.youtube.com/embed/s9gSuKaKcqM?si=Lgm3KqcYUj0rKjRK" target="_blank"><img src="mv1c.jpg" class="slides"></a>
+            <a href="https://www.youtube.com/embed/6zmKcUa4Xxk?si=0xReOPh5hXq-hTWW" target="_blank"><img src="mv2.jpg" class="slides"></a>
+            <a href="https://www.youtube.com/embed/3_9vCamtuPY?si=9PuV_w1ZQT3ml83E" target="_blank"><img src="mv4c.jpg" class="slides"></a>
+            <br/>
+            <br/>
+            <br/>
+            <h2>Recommended Movies</h2>
+            <br/>
+            <br/>
+
+            <div class="mov-content">
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">Michael</h2>
+                        <div class="box1-image" onclick="openMovie('Michael','Biographical Musical Drama','pos1.jpg','https://www.youtube.com/embed/2m1drlOZSDw')" style=" background-image: url('pos1.jpg');"></div>
+                        <p>biographical musical drama</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">Marty Supreme</h2>
+                        <div class="box1-image"  onclick="openMovie('Marty Supreme','Sports Drama and Biographical film','pos2.jpg','https://www.youtube.com/embed/s9gSuKaKcqM')" style=" background-image: url('pos2.jpg');"></div>
+                        <p>sports drama and biographical film</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">The Drama</h2>
+                        <div class="box1-image" onclick="openMovie('The Drama','In-depth Character development, Emotional themes, and Interpersonal conflicts','pos3.webp','https://www.youtube.com/embed/6zmKcUa4Xxk')"  style=" background-image: url('pos3.webp');"></div>
+                        <p>in-depth character development, emotional themes, and interpersonal conflicts</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">Dhurandhar 2</h2>
+                        <div class="box1-image" onclick="openMovie('Dhurandhar 2','Spy Action-Thriller','pos4.jpg','https://www.youtube.com/embed/NHk7scrb_9I')"  style=" background-image: url('pos4.jpg');"></div>
+                        <p>spy action-thriller</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">The Odyssey</h2>
+                        <div class="box1-image" onclick="openMovie('The Odyssey','pic action-adventure fantasy','pos6.webp','https://www.youtube.com/embed/vyCVVjA28fo')" style=" background-image: url('pos6.webp');"></div>
+                        <p>pic action-adventure fantasy</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">Dune - Part 3</h2>
+                        <div class="box1-image" onclick="openMovie('Dune :Part 3','Epic Space opera and sci-fi Drama ','pos5.jpg','https://www.youtube.com/embed/3_9vCamtuPY')"  style=" background-image: url('pos5.jpg');"></div>
+                        <p>epic space opera and sci-fi drama </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">Devil wears Prada 2</h2>
+                        <div class="box1-image" onclick="openMovie('Devil Wears Prada 2','Comedy Drama','pos7.jpg','https://www.youtube.com/embed/PMd1at7OwiE')" style=" background-image: url('pos7.jpg');"></div>
+                        <p>comedy-drama</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">Project Hail Mary</h2>
+                        <div class="box1-image" onclick="openMovie('Project Hail Mary','Hard Science Fiction novel','pos8.webp','https://www.youtube.com/embed/m08TxIsFTRI')" style=" background-image: url('pos8.webp');"></div>
+                        <p>hard science fiction novel</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">The Mummy</h2>
+                        <div class="box1-image" onclick="openMovie('Le Cronnins The Mummy','Supernatural body-Horror','pos9.jpg','https://www.youtube.com/embed/2QYptZpqDgA')" style=" background-image: url('pos9.jpg');"></div>
+                        <p>supernatural body-horror film</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">F1</h2>
+                        <div class="box1-image" onclick="openMovie('F1','Sports Drama and Action film','pos10.png','https://www.youtube.com/embed/69ffwl-8pCU')"  style=" background-image: url('pos10.png');"></div>
+                        <p>sports drama and action film</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">Wuthering height</h2>
+                        <div class="box1-image" onclick="openMovie('Wuthering Heights','Dark Romantic drama,Gothic Romance, and Period Drama','pos11.avif','https://www.youtube.com/embed/3fLCdIYShEQ')" style=" background-image: url('pos11.avif');"></div>
+                        <p>dark romantic drama, gothic romance, and period drama</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-content">
+                        <h2 style=" color: black;">The Superman 2</h2>
+                        <div class="box1-image" onclick="openMovie('Superman ','Superhero, Action-Adventure and Science Fiction','pos12.jpg','https://www.youtube.com/embed/2m1drlOZSDw')" style=" background-image: url('pos12.jpg');"></div>
+                        <p>superhero, action-adventure, and science fiction</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="movie-page" id="moviePage">
+            <div class="overlay"></div>
+            <div class="movie-info">
+                <div class="poster-side">
+                   <img id="moviePoster">
+                </div>
+                <div class="details-side">
+                   <h1 id="movieTitle"></h1>
+                   <p id="movieGenre"></p>
+                   <button onclick="playTrailer()">
+                        ▶ Watch Trailer
+                   </button>
+                   <button class="book-btn" onclick="openSeats()">
+                        Book Tickets
+                   </button>
+                   <button class="confirm-btn" onclick="confirmBooking()">
+                        Confirm Booking
+                   </button>
+                   <div id="trailer-box"></div>
+                </div>
+            </div>
+        </div>
+    
+<!-- SEAT BOOKING -->
+<div class="seat-page" id="seatPage">
+    <h1>Select Your Seats</h1>
+    
+    <div class="booking-details">
+
+<div class="detail-box">
+<label>Date</label>
+<input type="date" id="showDate">
+</div>
+
+<div class="detail-box">
+<label>Time</label>
+<select id="showTime">
+<option>10:00 AM</option>
+<option>1:00 PM</option>
+<option>4:00 PM</option>
+<option>7:00 PM</option>
+<option>10:00 PM</option>
+</select>
+</div> 
+
+<div class="detail-box">
+<label>Price</label>
+<input type="text" value="₹250" readonly>
+</div>
+<div class="payment-box">
+    <h3>Select Payment Method</h3>
+
+    <select id="paymentMethod">
+        <option value="">Choose Payment</option>
+        <option value="UPI">UPI</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Cash">Cash</option>
+    </select>
+</div>
+<div id="upiBox" style="display:none; text-align:center;">
+
+<h3>Scan QR to Pay</h3>
+
+<img
+id="upiQR"
+src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=8618351739@ybl&pn=CineBook&am=250"
+>
+
+<br><br>
+
+<button onclick="paymentDone()">
+Payment Done
+</button>
+
+</div>
+
+
+</div>
+    <div class="screen">SCREEN</div>
+    <div class="seats-container">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="seat available">A1</div>
+            <div class="seat booked">A2</div>
+            <div class="seat available">A3</div>
+            <div class="seat available">A4</div>
+            <div class="seat booked">A5</div>
+            <div class="seat available">A6</div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="seat available">B1</div>
+            <div class="seat available">B2</div>
+            <div class="seat booked">B3</div>
+            <div class="seat available">B4</div>
+            <div class="seat available">B5</div>
+            <div class="seat booked">B6</div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="seat available">C1</div>
+            <div class="seat available">C2</div>
+            <div class="seat available">C3</div>
+            <div class="seat booked">C4</div>
+            <div class="seat available">C5</div>
+            <div class="seat available">C6</div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+    </contents>
+
+</body>
+<script src="newwpj.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</html>
